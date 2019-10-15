@@ -114,7 +114,7 @@ namespace K2Engineering
                 int axialDigits = axialStiffness.ToString().Split('.')[0].Length;
 
                 double bendingStiffness = E * Math.Max(Iy, Iz);
-                bendingStiffness *= 0.001;                                                   //Still needs some adjustment to improve convergence speed
+                bendingStiffness *= 0.00000001;                                                   //Still needs some adjustment to improve convergence speed
                 int bendingDigits = bendingStiffness.ToString().Split('.')[0].Length;
 
 
